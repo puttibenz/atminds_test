@@ -1,0 +1,59 @@
+﻿day_id,service_no,issue_category,field_name,raw_value,action_taken,impact_note
+Day D,70,Empty Row,all_fields,ALL_NULL,Dropped row from dataset,Row contains zero usable data.
+Day C,7,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,21,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,28,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,40,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,49,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,60,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day C,78,Invalid Pax,pax,0.0,Flagged as Unknown pax; excluded from pax-weighted metrics,Pax set to 0.0 in raw source.
+Day E,62,Negative Dwell Time,meal_start/meal_end,11:53:00 -> 11:28:00,Dwell time invalidated; excluded from dwell time averages,Meal end precedes meal start.
+Day A,7,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day A,9,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day A,10,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day A,19,Table Setup Discrepancy,table_no.,15A,Mapped to Outdoor zone as split section of Table 15,"Setup guide lists Table 15 as full table, but logged as split."
+Day A,26,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day A,33,Table Setup Discrepancy,table_no.,15A,Mapped to Outdoor zone as split section of Table 15,"Setup guide lists Table 15 as full table, but logged as split."
+Day A,35,Ambiguous Section Suffix,table_no.,8,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day A,43,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day A,52,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day A,55,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day B,5,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day B,8,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day B,11,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day B,21,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day B,22,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day B,32,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day B,71,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day B,73,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day B,79,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day C,12,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day C,22,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day C,38,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day C,46,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day C,50,Cross-Zone Combined Table,table_no.,4A/11B,Flagged for operational review; units split into Indoor/Outdoor,Combines Indoor (4A) and Outdoor (11B) tables across physical barrier.
+Day C,54,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day C,61,Table Setup Discrepancy,table_no.,15A,Mapped to Outdoor zone as split section of Table 15,"Setup guide lists Table 15 as full table, but logged as split."
+Day C,62,Table Setup Discrepancy,table_no.,15B,Mapped to Outdoor zone as split section of Table 15,"Setup guide lists Table 15 as full table, but logged as split."
+Day C,73,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day C,83,Table Setup Discrepancy,table_no.,15B,Mapped to Outdoor zone as split section of Table 15,"Setup guide lists Table 15 as full table, but logged as split."
+Day C,86,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,4,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,18,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,28,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day D,38,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,43,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day D,45,Ambiguous Section Suffix,table_no.,10,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day D,48,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,55,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day D,59,Ambiguous Section Suffix,table_no.,10,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day D,62,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day D,67,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day E,2,Ambiguous Section Suffix,table_no.,11,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day E,4,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day E,14,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day E,24,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day E,35,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day E,43,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
+Day E,51,Ambiguous Section Suffix,table_no.,9,Mapped to full table units (A/B/C combined) in Outdoor zone,Table recorded as single digit without section letter.
+Day E,60,Unmapped Table Number,table_no.,16,Flagged as Unknown table; excluded from zone/capacity metrics,Table 16 does not exist in restaurant layout guide.
