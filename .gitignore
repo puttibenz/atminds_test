@@ -1,3 +1,7 @@
+# Raw Excel data files
+*.xlsx
+*.xls
+
 # Python virtual environment
 venv/
 ENV/
