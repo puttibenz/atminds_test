@@ -2,6 +2,9 @@
 *.xlsx
 *.xls
 
+# PDF files
+*.pdf
+
 # Python virtual environment
 venv/
 ENV/
