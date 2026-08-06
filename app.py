@@ -191,6 +191,10 @@ elif page == "💬 Task 1: Staff Comments Audit":
                               color='Guest_type', color_discrete_map={'In house': '#2B5C8F', 'Walk in': '#D95F02'},
                               title="กระจายตัวเวลารอคิว (Wait Time in Minutes)")
             st.plotly_chart(fig_wait, use_container_width=True)
+
+        # Operational Caveat Box
+        st.info("💡 **Operational Caveat (ข้อจำกัดข้อมูลคิว):** ข้อมูลเวลาคิว (queue_start / queue_end) มีการบันทึกไว้เฉพาะ Day B และ Day C เท่านั้น (รวม 73 กลุ่ม) ส่วน Day A, D, E ไม่มีบันทึกคิว แม้กลุ่มตัวอย่าง 73 กลุ่มจะสมบูรณ์ทางสถิติในการพิสูจน์ Comment 1 แต่แนะนำให้บังคับบันทึกคิวทุกวันในอนาคตเพื่อการติดตามผลที่สมบูรณ์")
+
             
         with c2:
             walk_summary = df_queue.groupby('Guest_type').agg(

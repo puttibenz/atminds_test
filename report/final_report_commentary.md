@@ -50,8 +50,10 @@ The dataset provided (`2026 Data Test1 Final - Busy Buffet Dataset.xlsx`) contai
 
 To test this claim, we analyzed all queuing groups (recorded on Day B & Day C, total 73 queuing groups):
 
-1. **Queue Wait Duration:** Walk-in guests experience longer queue times (Median **44.5 minutes**, Mean **38.4 minutes**) compared to In-house hotel guests (Median **28.0 minutes**, Mean **30.6 minutes**).
+1. **Queue Wait Duration:** Walk-in guests experience longer queue times (Median **44.5 minutes**, Mean **38.4 minutes**) compared to In-house hotel guests (Median **28.0 minutes**, Mean **28.0 minutes**).
 2. **Queue Abandonment (Walk-Away Rate):** Contrary to staff perceptions, **In-house hotel guests abandon queues at nearly double the rate of Walk-in guests**. 7 out of 25 queuing In-house groups walked away (**28.0% walk-away rate**), whereas only 7 out of 48 queuing Walk-in groups abandoned (**14.6% walk-away rate**).
+
+> **Operational Caveat (Data Limitation):** Queue timestamps (`queue_start` / `queue_end`) were logged exclusively during Day B and Day C (73 total queuing groups), while Days A, D, and E lacked queue tracking. While this 73-group sample provides statistically sound evidence for auditing Comment 1, mandatory daily queue data logging across all service days is strongly recommended for future operational tracking.
 
 `[INSERT_CHART_HERE: Wait Time Distribution Boxplot (In-House vs Walk-In)]`
 
@@ -68,7 +70,7 @@ Walk-in guests do wait longer, but staff mistakenly assumed Walk-in guests aband
 To test operational uniformity, we evaluated total customer volume and constructed **15-minute sliding window seated concurrency curves** (06:00 to 12:45 AM):
 
 1. **Daily Volume Variation:** Customer volume varies significantly across days, ranging from **57 groups (102 Pax) on Day A** to **86 groups (166 Pax) on Day C** — representing a **50.9% volume difference**.
-2. **Peak Concurrency Variation:** Seated concurrency on Day A peaked at only 16 simultaneous groups, whereas Day C and Day D reached peak stress levels of 20 to 23 simultaneous groups.
+2. **Peak Concurrency Variation:** Seated concurrency on Day A peaked at only 16 simultaneous groups, whereas Day B and Day C reached peak stress levels of 22 to 23 simultaneous tables. Day D and Day E experienced moderate peak concurrency of 18 tables.
 
 `[INSERT_CHART_HERE: Total Serviced Groups per Day Bar Chart]`
 
