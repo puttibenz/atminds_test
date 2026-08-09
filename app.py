@@ -13,7 +13,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS Styling
+# Custom CSS Styling with High Contrast Colors (Compatible with Light & Dark Themes)
 st.markdown("""
 <style>
     .main-header {
@@ -33,27 +33,61 @@ st.markdown("""
         padding: 15px;
         border-left: 5px solid #2B5C8F;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        color: #0F172A !important;
     }
     .verdict-box-true {
-        background-color: #ECFDF5;
-        border-left: 5px solid #10B981;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 15px;
+        background-color: #ECFDF5 !important;
+        border-left: 5px solid #10B981 !important;
+        padding: 18px !important;
+        border-radius: 8px !important;
+        margin-top: 15px !important;
+        color: #064E3B !important;
+    }
+    .verdict-box-true h4 {
+        color: #047857 !important;
+        margin-top: 0 !important;
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+    }
+    .verdict-box-true p, .verdict-box-true b {
+        color: #065F46 !important;
+        font-size: 1rem !important;
     }
     .verdict-box-false {
-        background-color: #FEF2F2;
-        border-left: 5px solid #EF4444;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 15px;
+        background-color: #FEF2F2 !important;
+        border-left: 5px solid #EF4444 !important;
+        padding: 18px !important;
+        border-radius: 8px !important;
+        margin-top: 15px !important;
+        color: #7F1D1D !important;
+    }
+    .verdict-box-false h4 {
+        color: #B91C1C !important;
+        margin-top: 0 !important;
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+    }
+    .verdict-box-false p, .verdict-box-false b {
+        color: #991B1B !important;
+        font-size: 1rem !important;
     }
     .verdict-box-partial {
-        background-color: #FFFBEB;
-        border-left: 5px solid #F59E0B;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 15px;
+        background-color: #FFFBEB !important;
+        border-left: 5px solid #F59E0B !important;
+        padding: 18px !important;
+        border-radius: 8px !important;
+        margin-top: 15px !important;
+        color: #78350F !important;
+    }
+    .verdict-box-partial h4 {
+        color: #B45309 !important;
+        margin-top: 0 !important;
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+    }
+    .verdict-box-partial p, .verdict-box-partial b {
+        color: #92400E !important;
+        font-size: 1rem !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -507,18 +541,18 @@ elif page == "💡 Task 3: Recommended Strategy":
     col_p1, col_p2 = st.columns(2)
     with col_p1:
         st.markdown("""
-        <div style="background-color:#F0FDF4; padding:20px; border-radius:8px; border-left:5px solid #10B981;">
-            <h4>🟢 Off-Peak Window (06:00–08:00 AM & 10:00 AM–01:00 PM)</h4>
-            <p><b>Policy:</b> Full 5-Hour Unlimited Seating Benefit</p>
-            <p><b>Rationale:</b> Preserves the core promotional promise of the TikTok marketing campaign ("All You Can Eat / 5 Hours") when table vacancy is high.</p>
+        <div style="background-color:#F0FDF4; padding:20px; border-radius:8px; border-left:5px solid #10B981; color:#064E3B !important;">
+            <h4 style="color:#047857 !important; margin-top:0; font-size:1.15rem; font-weight:700;">🟢 Off-Peak Window (06:00–08:00 AM & 10:00 AM–01:00 PM)</h4>
+            <p style="color:#065F46 !important; font-size:1rem; margin-bottom:0.5rem;"><b style="color:#047857 !important;">Policy:</b> Full 5-Hour Unlimited Seating Benefit</p>
+            <p style="color:#065F46 !important; font-size:0.95rem;"><b style="color:#047857 !important;">Rationale:</b> Preserves the core promotional promise of the TikTok marketing campaign ("All You Can Eat / 5 Hours") when table vacancy is high.</p>
         </div>
         """, unsafe_allow_html=True)
     with col_p2:
         st.markdown("""
-        <div style="background-color:#EFF6FF; padding:20px; border-radius:8px; border-left:5px solid #3B82F6;">
-            <h4>🔵 Peak Window (08:00–10:00 AM)</h4>
-            <p><b>Policy:</b> Soft Cap of 90–100 Minutes on Seating</p>
-            <p><b>Rationale:</b> Directly targets peak congestion where Walk-in dwell averages 73–102 minutes, accelerating table turnover.</p>
+        <div style="background-color:#EFF6FF; padding:20px; border-radius:8px; border-left:5px solid #3B82F6; color:#1E3A8A !important;">
+            <h4 style="color:#1D4ED8 !important; margin-top:0; font-size:1.15rem; font-weight:700;">🔵 Peak Window (08:00–10:00 AM)</h4>
+            <p style="color:#1E40AF !important; font-size:1rem; margin-bottom:0.5rem;"><b style="color:#1D4ED8 !important;">Policy:</b> Soft Cap of 90–100 Minutes on Seating</p>
+            <p style="color:#1E40AF !important; font-size:0.95rem;"><b style="color:#1D4ED8 !important;">Rationale:</b> Directly targets peak congestion where Walk-in dwell averages 73–102 minutes, accelerating table turnover.</p>
         </div>
         """, unsafe_allow_html=True)
         
